@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ajipcom/public_html/moke
+    - /bin/cp -r * $DEPLOYPATH
