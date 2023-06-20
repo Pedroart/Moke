@@ -1,4 +1,14 @@
 <?php
 
-define("__DIREC__",$_SERVER['DOCUMENT_ROOT']);
-include __DIREC__."core/autoloader.php";
+define("__DIREC__",__DIR__);
+include __DIREC__."/core/autoloader.php";
+
+$roteador = new core\router;
+
+// API GENERAL
+
+// PAGINAS
+
+$roteador->get("/productos",function(){
+    echo "productos";
+});
