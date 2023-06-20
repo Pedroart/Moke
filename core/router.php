@@ -9,7 +9,8 @@ class router
         session_start();
     }
 
-    public function obtenerPrimeraPalabra($url = $_SERVER['REQUEST_URI']) {
+    public function obtenerPrimeraPalabra() {
+        $url = $_SERVER['REQUEST_URI'];
         // Eliminar el protocolo y el dominio de la URL
         $url = str_replace(['http://', 'https://'], '', $url);
         $url = strtok($url, '/');
