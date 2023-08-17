@@ -1,11 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
-define("__DIREC__",__DIR__);
-include __DIREC__."/core/router.php";
-
+include __DIR__."/core/conf.php";
+include _cor_."/router.php";
 
 $roteador = new core\router();
 
@@ -13,6 +9,3 @@ $roteador = new core\router();
 
 // PAGINAS
 
-$roteador->get("/productos",function(){
-    echo "productos";
-});
