@@ -1,0 +1,27 @@
+# Definir URL localhost
+
+## httpd-vhosts.conf
+
+ir a: C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+Agregar:
+
+<VirtualHost *:80>
+    DocumentRoot "C:\xampp\htdocs\[carpeta]\public"
+    ServerName moke.test
+<\VirtualHost>
+
+## host
+
+Ir a: C:\windows\system32\drivers\etc\hosts
+
+Agregar: 127.0.0.1 moke.test
+
+
+Diseño Api Rest: https://www.youtube.com/watch?v=IWsRGIra2hw&list=PLIbWwxXce3VpvBT_O977da8XECEp-JTJt&index=7
+
+
+Usuarios
+    - Compradores
+    - Trabajadores
+    - Administradores
